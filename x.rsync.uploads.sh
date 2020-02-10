@@ -13,4 +13,4 @@ done
 KEY_AWS_MM="~/.ssh/mm-tuc-dt-8200-xp-key.pem"
 UPLOADS_DIR="/var/www/$DOMAIN/public/content/uploads/"
 
-runuser -l root -c "rsync -r -a -v -e 'ssh -i $KEY_AWS_MM' ubuntu@$INSTANCE:$UPLOADS_DIR $UPLOADS_DIR"
+sudo runuser -l root -c "rsync -r -a -v -e 'ssh -i $KEY_AWS_MM' ubuntu@$INSTANCE:$UPLOADS_DIR $UPLOADS_DIR"
