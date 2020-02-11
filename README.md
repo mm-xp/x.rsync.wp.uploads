@@ -7,7 +7,7 @@ Script designed to be ran as CRONJOB to synchronize wp's uploads folder between 
       -i IP Address to pull files from
 
 ### Install 
-    $ git clone git clone https://github.com/mm-xp/x.rsync.wp.uploads.git ~/bin/x.rsync.wp.uploads/
+    $ git clone https://github.com/mm-xp/x.rsync.wp.uploads.git ~/bin/x.rsync.wp.uploads/
     $ sudo crontab -e
     
     # RSYNC WP UPLOADS EVERY MIN
