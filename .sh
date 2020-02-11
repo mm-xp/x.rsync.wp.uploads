@@ -10,7 +10,7 @@ do
 done
 
 # KEYS & PATHS
-KEY_AWS_MM="/home/ubuntu/.ssh/mm-tuc-dt-8200-xp-key.pem"
+KEY_AWS_MM="~/.ssh/mm-tuc-dt-8200-xp-key.pem"
 UPLOADS_DIR="/var/www/$DOMAIN/public/content/uploads/"
 
 sudo runuser -l root -c "sudo rsync -r -a -v -e 'ssh -i $KEY_AWS_MM' ubuntu@$INSTANCE:$UPLOADS_DIR $UPLOADS_DIR"
